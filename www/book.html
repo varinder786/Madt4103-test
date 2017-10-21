@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script>
+        $(document).on("pagecreate", "#bookhome", function() {
+            $(document).on("swiperight", function(e) {
+                if ($.mobile.activePage.jqmData("panel") !== "open") {
+                    if (e.type === "swipeleft") {
+                        $("#panel1").panel("open");
+
+                    } else if (e.type === "swiperight") {
+                        $("#panel1").panel("open");
+
+                    }
+                }
+            });
+        });
+
+        $(document).on("pagecreate", "#fade_page1", function() {
+            $(document).on("swiperight", function(e) {
+                if ($.mobile.activePage.jqmData("panel") !== "open") {
+                    if (e.type === "swipeleft") {
+                        $("#panel11").panel("open");
+
+                    } else if (e.type === "swiperight") {
+                        $("#panel11").panel("open");
+
+                    }
+                }
+            });
+        });
+        $(document).on("pagecreate", "#fade_page2", function() {
+            $(document).on("swiperight", function(e) {
+                if ($.mobile.activePage.jqmData("panel") !== "open") {
+                    if (e.type === "swipeleft") {
+                        $("#panel12").panel("open");
+
+                    } else if (e.type === "swiperight") {
+                        $("#panel12").panel("open");
+
+                    }
+                }
+            });
+        });
+        $(document).on("pagecreate", "#fade_page3", function() {
+            $(document).on("swiperight", function(e) {
+                if ($.mobile.activePage.jqmData("panel") !== "open") {
+                    if (e.type === "swipeleft") {
+                        $("#panel13").panel("open");
+
+                    } else if (e.type === "swiperight") {
+                        $("#panel13").panel("open");
+
+                    }
+                }
+            });
+        });
+        $(document).on("pagecreate", "#fade_page4", function() {
+            $(document).on("swiperight", function(e) {
+                if ($.mobile.activePage.jqmData("panel") !== "open") {
+                    if (e.type === "swipeleft") {
+                        $("#panel14").panel("open");
+
+                    } else if (e.type === "swiperight") {
+                        $("#panel14").panel("open");
+
+                    }
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div data-role="page" id="bookhome">
+        <div data-role="header">
+            <h1>Sleepy hollow</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div class="ui-grid-solo" style="text-align:center;">
+                <div class="ui-block-a">
+                    <div>
+                        <img src="img/book.jpg" style="margin:0;">
+                    </div>
+                    <div>
+
+                        <table width="100%">
+                            <tr>
+                                <td width="100%">
+                                    Author : Arsh
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    Language : English
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    Type : academic
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div data-role="Footer">
+            <div class="ui-grid-a" style="width:20%;">
+                <div class="ui-block-b">
+                    <a class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-icon-notext" href="#bookhome" data-transition="turn">aaa</a>
+                </div>
+                <div class="ui-block-c">
+                    <a href="#fade_page1" class="ui-btn ui-icon-arrow-r ui-btn-icon-left ui-btn-icon-notext" data-transition="turn">aaa</a>
+                </div>
+            </div>
+            <div data-role="panel" id="panel1">
+                <h2>Book List</h2>
+                <ul data-role="listview">
+                    <li>
+                        <a href="book.html"><img src="img/book.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="book.html"><img src="img/book2.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="book.html"><img src="img/book3.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="book.html"><img src="img/book4.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="book.html"><img src="img/book5.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="book.html"><img src="img/book6.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="book.html"><img src="img/book7.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="book.html"><img src="img/book8.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="book.html"><img src="img/book9.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="fade_page1">
+        <div data-role="header">
+            <h1>Sleepy hollow</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div class="ui-grid-solo">
+                <div class="ui-block-a">
+                    <p style="text-align:justify;">The story is set in 1790 in the countryside around the Dutch settlement of Tarry Town (historical Tarrytown, New York), in a secluded glen called Sleepy Hollow. Sleepy Hollow is renowned for its ghosts and the haunting atmosphere that pervades the imaginations of its inhabitants and visitors. Some residents say this town was bewitched during the early days of the Dutch settlement. Other residents say an old Native American chief, the wizard of his tribe, held his powwows here before the country was discovered by Master Hendrick Hudson. The most infamous spectre in the Hollow is the Headless Horseman, said to be the ghost of a Hessian trooper that had his head shot off by a stray cannonball during "some nameless battle" of the American Revolutionary War, and who "rides forth to the scene of battle in nightly quest of his head".</p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div data-role="Footer">
+            <div class="ui-grid-b" style="margin-left:10%;">
+                <div class="ui-block-a">
+                    <a class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-btn-icon-notext" href="#bookhome" data-transition="turn">aaa</a>
+                </div>
+                <div class="ui-block-b">
+                    <a class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-icon-notext" href="#bookhome" data-transition="turn">aaa</a>
+                </div>
+                <div class="ui-block-c">
+                    <a href="#fade_page2" class="ui-btn ui-icon-arrow-r ui-btn-icon-left ui-btn-icon-notext" data-transition="turn">aaa</a>
+                </div>
+            </div>
+        </div>
+        <div data-role="panel" id="panel11">
+            <h2>Book List</h2>
+            <ul data-role="listview">
+                <li>
+                    <a href="book.html"><img src="img/book.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book2.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book3.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book4.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book5.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book6.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book7.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book8.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book9.jpg"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div data-role="page" id="fade_page2">
+
+        <div data-role="header">
+            <h1>Sleepy hollow</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div class="ui-grid-solo">
+                <div class="ui-block-a">
+                    <p style="text-align:justify;">
+                        he "Legend" relates the tale of Ichabod Crane, a lean, lanky and extremely superstitious schoolmaster from Connecticut, who competes with Abraham "Brom Bones" Van Brunt, the town rowdy, for the hand of 18-year-old Katrina Van Tassel, the daughter and sole child of a wealthy farmer, Baltus Van Tassel. Crane, a Yankee and an outsider, sees marriage to Katrina as a means of procuring Van Tassel's extravagant wealth. Bones, the local hero, vies with Ichabod for Katrina's hand, playing a series of pranks on the jittery schoolmaster, and the fate of Sleepy Hollow's fortune weighs in the balance for some time. The tension between the three is soon brought to a head. On a placid autumn night, the ambitious Crane attends a harvest party at the Van Tassels' homestead. He dances, partakes in the feast, and listens to ghostly legends told by Brom and the locals, but his true aim is to propose to Katrina after the guests leave. His intentions, however, are ill-fated.
+                    </p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div data-role="Footer">
+            <div class="ui-grid-b" style="margin-left:10%;">
+                <div class="ui-block-a">
+                    <a class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-btn-icon-notext" href="#fade_page1" data-transition="turn">aaa</a>
+                </div>
+                <div class="ui-block-b">
+                    <a class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-icon-notext" href="#bookhome" data-transition="turn">aaa</a>
+                </div>
+                <div class="ui-block-c">
+                    <a href="#fade_page3" class="ui-btn ui-icon-arrow-r ui-btn-icon-left ui-btn-icon-notext" data-transition="turn">aaa</a>
+                </div>
+            </div>
+        </div>
+        <div data-role="panel" id="panel12">
+            <h2>Book List</h2>
+            <ul data-role="listview">
+                <li>
+                    <a href="book.html"><img src="img/book.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book2.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book3.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book4.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book5.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book6.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book7.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book8.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book9.jpg"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="fade_page3">
+
+        <div data-role="header">
+            <h1>Sleepy hollow</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div class="ui-grid-solo">
+                <div class="ui-block-a">
+                    <p style="text-align:justify;">
+                       After having failed to secure Katrina's hand, Ichabod rides home "heavy-hearted and crestfallen" through the woods between Van Tassel's farmstead and the Sleepy Hollow settlement. As he passes several purportedly haunted spots, his active imagination is engorged by the ghost stories told at Baltus' harvest party. After nervously passing under a lightning-stricken tulip tree purportedly haunted by the ghost of British spy Major André, Ichabod encounters a cloaked rider at an intersection in a menacing swamp. Unsettled by his fellow traveler's eerie size and silence, the teacher is horrified to discover that his companion's head is not on his shoulders, but on his saddle. In a frenzied race to the bridge adjacent to the Old Dutch Burying Ground, where the Hessian is said to "vanish, according to rule, in a flash of fire and brimstone" upon crossing it, Ichabod rides for his life, desperately goading his temperamental plow horse down the Hollow. However, to Crane's horror, the ghoul clambers over the bridge, rears his horse, and hurls his severed head into Ichabod's terrified face.</p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div data-role="Footer">
+            <div class="ui-grid-b" style="margin-left:10%;">
+                <div class="ui-block-a">
+                    <a class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-btn-icon-notext" href="#fade_page2" data-transition="turn">aaa</a>
+                </div>
+                <div class="ui-block-b">
+                    <a class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-icon-notext" href="#bookhome" data-transition="turn">aaa</a>
+                </div>
+                <div class="ui-block-c">
+                    <a href="#fade_page4" class="ui-btn ui-icon-arrow-r ui-btn-icon-left ui-btn-icon-notext" data-transition="turn">aaa</a>
+                </div>
+            </div>
+        </div>
+        <div data-role="panel" id="panel13">
+            <h2>Book List</h2>
+            <ul data-role="listview">
+                <li>
+                    <a href="book.html"><img src="img/book.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book2.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book3.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book4.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book5.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book6.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book7.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book8.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book9.jpg"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="fade_page4">
+
+        <div data-role="header">
+            <h1>Sleepy hollow</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div class="ui-grid-solo">
+                <div class="ui-block-a">
+                    <p style="text-align:justify;">
+                        <h1>The End</h1>
+                    </p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div data-role="Footer">
+            <div class="ui-grid-a" style="margin-left:10%;">
+                <div class="ui-block-a">
+                    <a class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-btn-icon-notext" href="#fade_page3" data-transition="turn">aaa</a>
+                </div>
+                <div class="ui-block-b">
+                    <a class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-icon-notext" href="#bookhome" data-transition="turn">aaa</a>
+                </div>
+
+            </div>
+        </div>
+        <div data-role="panel" id="panel14">
+            <h2>Book List</h2>
+            <ul data-role="listview">
+                <li>
+                    <a href="book.html"><img src="img/book.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book2.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book3.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book4.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book5.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book6.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book7.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book8.jpg"></a>
+                </li>
+                <li>
+                    <a href="book.html"><img src="img/book9.jpg"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
